@@ -1,0 +1,40 @@
+{
+  "name": "generator-angular-phonegap-lungo",
+  "version": "0.0.1",
+  "description": "A generator for webapps that utilizes angular + lungo and creates phonegap applications",
+  "keywords": [
+    "yeoman-generator",
+    "phonegap",
+    "lungo",
+    "angular"
+  ],
+  "homepage": "https://github.com/i8ramin/generator-angular-phonegap-lungo",
+  "bugs": "https://github.com/i8ramin/generator-angular-phonegap-lungo/issues",
+  "author": {
+    "name": "i8ramin",
+    "email": "user@example.net",
+    "url": "https://github.com/i8ramin"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i8ramin/generator-angular-phonegap-lungo.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.10.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+  <meta charset="utf-8">
+
+  <title>Angular Lungo Phonegap Starter Kit</title>
+  <meta name="description" content="">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- build:css styles/vendor.css -->
+  <link rel="stylesheet" type="text/css" href="components/lungo/lungo.css">
+  <link rel="stylesheet" type="text/css" href="components/lungo/lungo.icon.css">
+  <link rel="stylesheet" type="text/css" href="components/lungo/lungo.icon.brand.css">
+  <!--<link rel="stylesheet" type="text/css" href="components/lungo/theme.lungo.css">-->
+  <!-- endbuild -->
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" type="text/css" href="styles/theme.css" id="theme-stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- iPhone -->
+  <link href="res/icon/ios/icon.png" sizes="57x57" rel="apple-touch-icon">
+  <link href="res/screen/ios/Default~iphone.png"
+        media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPhone (Retina) -->
+  <link href="res/icon/ios/icon@2x.png" sizes="114x114" rel="apple-touch-icon">
+  <link href="res/screen/ios/Default@2x~iphone.png"
+        media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPhone 5 -->
+  <link href="res/screen/ios/Default-568h@2x~iphone.png"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPad -->
+  <link href="res/icon/ios/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+  <!-- <link href="res/screen/ios/Default-Portrait~ipad.png"
+        media="(device-width: 768px) and (device-height: 1024px)
+           and (orientation: portrait)
+           and (-webkit-device-pixel-ratio: 1)"
+        rel="apple-touch-startup-image"> -->
+  <!-- <link href="res/screen/ios/Default-Landscape~ipad.png"
+        media="(device-width: 768px) and (device-height: 1024px)
+           and (orientation: landscape)
+           and (-webkit-device-pixel-ratio: 1)"
+        rel="apple-touch-startup-image"> -->
+
+  <!-- iPad (Retina) -->
+  <link href="res/icon/ios/icon-72@2x.png" sizes="144x144" rel="apple-touch-icon">
+  <!-- <link href="res/screen/ios/Default-Portrait@2x~ipad.png"
+        media="(device-width: 768px) and (device-height: 1024px)
+           and (orientation: portrait)
+           and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image"> -->
+  <!-- <link href="res/screen/ios/Default-Landscape@2x~ipad.png"
+        media="(device-width: 768px) and (device-height: 1024px)
+           and (orientation: landscape)
+           and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image"> -->
+
+  <!-- load GA variable here so we can use it while it downloads -->
+  <script>var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];</script>
+</head>
+<body class="app" lab-boot tappable>
+
+  <section id="main" data-transition="pop" ng-controller="AppCtrl">
+    <article id="dashboard" class="active">
+      <p>Hello World!</p>
+    </article>
+  </section>
+
+  <aside id="menu" class="right">
+    <header data-title="Menu"></header>
+    <article class="active list scroll">
+      <p>hello</p>
+    </article>
+  </aside>
+
+  <lab-view></lab-view>
+
+  <!-- necessary for access to phonegap API: https://build.phonegap.com/docs/preparing-your-app -->
+  <script src="phonegap.js"></script>
+
+  <!-- build:js scripts/scripts.js -->
+  <script src="components/quojs/quo.js"></script>
+  <script src="components/lungo/lungo.js"></script>
+  <script src="components/angular/angular.js"></script>
+  <script src="components/lungo-angular-bridge/src/lungo-angular-bridge.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/directives.js"></script>
+  <script src="scripts/controllers.js"></script>
+  <!-- endbuild -->
+
+  <!-- Google Analytics -->
+  <script>
+    // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    // g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    // s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
