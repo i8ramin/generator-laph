@@ -1,24 +1,24 @@
 {
-  "name": "generator-angular-phonegap-lungo",
+  "name": "generator-laph",
   "version": "0.0.1",
-  "description": "A generator for webapps that utilizes angular + lungo and creates phonegap applications",
+  "description": "A generator for webapps that uses Lungo + Angular and is meant to be built for Phonegap",
   "keywords": [
     "yeoman-generator",
     "phonegap",
     "lungo",
     "angular"
   ],
-  "homepage": "https://github.com/i8ramin/generator-angular-phonegap-lungo",
-  "bugs": "https://github.com/i8ramin/generator-angular-phonegap-lungo/issues",
+  "homepage": "https://github.com/i8ramin/generator-laph",
+  "bugs": "https://github.com/i8ramin/generator-laph/issues",
   "author": {
     "name": "i8ramin",
-    "email": "user@example.net",
+    "email": "i8ramin@gmail.com",
     "url": "https://github.com/i8ramin"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/i8ramin/generator-angular-phonegap-lungo.git"
+    "url": "https://github.com/i8ramin/generator-laph.git"
   },
   "scripts": {
     "test": "mocha"

@@ -11,8 +11,8 @@ module.exports = function (grunt) {
   // configurable paths
   var yeomanConfig = {
     app: 'app',
-    dist: 'dist',
-    xcode: 'phonegap/xcode'
+    dist: 'dist'<% if (phonegapSupport) { %>,
+    xcode: 'phonegap/xcode'<% } %>
   };
 
   try {
@@ -163,9 +163,10 @@ module.exports = function (grunt) {
     },
     imageEmbed: {
       dist: {
-        src: ['<%%= yeoman.app %>/styles/fonts.css'],
-        dest: '<%%= yeoman.app %>/styles/fonts.css',
+        src: ['<%%= yeoman.app %>/styles/_fonts.scss'],
+        dest: '<%%= yeoman.app %>/styles/_fonts.scss',
         options: {
+          maxImageSize: 0,
           deleteAfterEncoding : false
         }
       }
@@ -297,7 +298,7 @@ module.exports = function (grunt) {
           src: ['Config.xml'],
           dest: '<%%= yeoman.dist %>'
         }]
-      },
+      }<% if (phonegapSupport) { %>,
       xcode: {
         files: [{
           expand: true,
@@ -333,8 +334,8 @@ module.exports = function (grunt) {
           dest: '<%%= yeoman.xcode %>/Resources/splash',
           src: ['*.png']
         }]
-      }
-    },
+      }<% } %>
+    },<% if (phonegapSupport) { %>
     'phonegap-build': {
       debug: {
         options: {
@@ -367,7 +368,7 @@ module.exports = function (grunt) {
           {expand: true, cwd: 'dist/', src: ['**']}
         ]
       }
-    },
+    },<% } %>
     manifest: {
       dist: {
         options: {
@@ -431,6 +432,7 @@ module.exports = function (grunt) {
     // 'manifest'
   ]);
 
+<% if (phonegapSupport) { %>
   grunt.registerTask('phonegap', [
     'build',
     'compress',
@@ -442,6 +444,7 @@ module.exports = function (grunt) {
     'build',
     'copy:xcode'
   ]);
+<% } %>
 
   grunt.registerTask('default', ['build']);
 };

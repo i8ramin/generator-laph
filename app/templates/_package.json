@@ -32,9 +32,8 @@
     "grunt-mocha": "~0.3.0",<% } %>
     "grunt-open": "~0.2.0",
     "grunt-ngmin": "~0.0.2",
-    "grunt-svgmin": "~0.1.0",
-    "grunt-concurrent": "~0.1.0",
-    "grunt-phonegap-build": "https://github.com/centralway/grunt-phonegap-build/tarball/master",
-    "grunt-image-embed": "0.3.0"
+    "grunt-svgmin": "~0.1.0",<% if (phonegapSupport) { %>
+    "grunt-phonegap-build": "~0.0.6",<% } %>
+    "grunt-image-embed": "~0.3.0"
   }
 }

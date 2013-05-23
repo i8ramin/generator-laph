@@ -3,7 +3,7 @@
 
 var assert  = require('assert');
 
-describe('angular-phonegap-lungo generator', function () {
+describe('laph generator', function () {
   it('can be imported without blowing up', function () {
     var app = require('../app');
     assert(app !== undefined);
